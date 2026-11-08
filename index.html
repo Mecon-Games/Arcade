@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GB Arcade</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="style.css"></head><body>
+<main>
+<h1>GB Arcade</h1>
+<p class="sub">Vier Game-Boy-Klassiker, farbig und direkt im Browser. Wähle ein Spiel.</p>
+<div class="grid" id="grid"></div>
+</main>
+<section id="play" aria-label="Spiel">
+<div class="bar"><button class="btn" id="back">Zurück</button><h2 id="gname"></h2><button class="btn ms" id="st">Start</button><button class="btn ms" id="se">Select</button><button class="btn" id="reset">Neustart</button><button class="btn" id="col">Original-Grün</button></div>
+<div class="frame"><div class="screen"><canvas id="cv" width="160" height="144"></canvas></div></div>
+<div class="hint">Pfeiltasten oder WASD bewegen · X oder K = A · Z oder J = B · Enter = Start · Shift = Select · Esc = Zurück</div>
+<div class="th"><b>Wischen</b> = Richtung · <b>Tippen</b> = A<br><b>Lange drücken</b> = B · <b>2. Finger</b> = A</div>
+</section>
+<script src="roms.js"></script>
+<script src="gb.js"></script>
+<script src="app.js"></script></body></html>
